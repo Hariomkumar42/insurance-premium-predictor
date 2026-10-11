@@ -137,7 +137,17 @@ Use the interactive Swagger documentation at `/docs` to inspect the exact input 
 
 MCA Student | Aspiring Data Scientist and AI Engineer
 
+
 GitHub: [Hariomkumar42](https://github.com/Hariomkumar42)
+
+## 📸 Project Screenshots
+
+### Streamlit Frontend
+Screenshot 2026-10-12 021110.png
+
+### Prediction Result
+Screenshot 2026-10-12 021156.png,Screenshot 2026-10-12 021210.png
+
 
 ## ⚠️ Disclaimer
 
