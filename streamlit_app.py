@@ -11,8 +11,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-API_URL = "http://127.0.0.1:8000/predict"
-API_HEALTH_URL = "http://127.0.0.1:8000/docs"
+
+API_BASE_URL = "http://13.60.58.51:8000"
+
+API_URL = f"{API_BASE_URL}/predict"
+API_HEALTH_URL = f"{API_BASE_URL}/health"
+
 
 # ---------------- CUSTOM CSS ----------------
 
@@ -527,11 +531,12 @@ if predict_button:
                     )
 
             except requests.RequestException as error:
-                st.error(
-                    "Could not connect to FastAPI. Make sure your backend "
-                    "is running at http://127.0.0.1:8000.\n\n"
-                    f"Technical details: {error}"
-                )
+              st.error(
+                  "Could not connect to the AWS FastAPI backend. "
+                  f"Check that {API_BASE_URL} is reachable.\n\n"
+                  f"Technical details: {error}"
+                 )
+                
 
 
 # ---------------- DISPLAY RESULT ----------------
